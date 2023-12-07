@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+</head>
+<body>
+    <script>
+
+        // Membuat constructor function versi lama
+
+        function Person (firstName, lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.sayHello = function (name) {
+                console.info(`Hello ${name}, my name is ${this.firstName}`);
+            }
+        }
+
+        Person.prototype.sayGoodBye = function () {
+            console.info("Good Bye!!");
+        };
+
+        Person.prototype.running = function () {
+            console.info(`${this.firstName} is Running`);
+        };
+
+        const dimas = new Person("Dimas", "Saputra");
+        dimas.sayGoodBye();
+        dimas.running();
+
+        const ara = new Person("Ara", "Safitri");
+
+        console.info(dimas);
+        console.info(ara);
+
+    </script>
+</body>
+</html>

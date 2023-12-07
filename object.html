@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+
+        // Membuat constructor function versi lama
+
+        function Person (firstName, lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.sayHello = function (name) {
+                console.info(`Hello ${name}, my name is ${this.firstName}`);
+            }
+        }
+
+        const dimas = new Person("Dimas", "Saputra");
+        dimas.sayHello("Rudi");
+
+        const ara = new Person("Ara", "Safitri");
+        ara.sayHello("Dimas");
+
+        console.info(dimas);
+        console.info(ara);
+
+    </script>
+</body>
+</html>

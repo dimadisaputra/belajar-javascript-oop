@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Field</title>
+</head>
+<body>
+    <script>
+
+        class Person{
+            firstName;
+            lastName;
+            balance = 0;
+
+            constructor(firstName, lastName) {
+                this.firstName = firstName;
+                this.lastName = lastName;
+            }
+        }
+
+        const dimas = new Person("Dimas", "Saputra");
+        console.info(dimas);
+
+    </script>
+</body>
+</html>
